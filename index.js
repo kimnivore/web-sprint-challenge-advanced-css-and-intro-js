@@ -270,7 +270,7 @@ function removeArtist(array, index){
     array.splice(index, 1);
 }
 }
-return array.length -1;
+return array.length - 1;
 }
   console.log('Task 5', removeArtist(artists, 0));
 
@@ -304,6 +304,7 @@ function addArtist(array) {
 }
 
 console.log('Task 6', addArtist(artists));
+
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
 1. Receive an array 
@@ -311,10 +312,16 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/) {
-  /*Your Code Here*/
+function lotsOfArt(array) {
+  const manyArtist = [];
+  for(let i = 0; i < array.length; i++){
+    if(array[i].paintings > 100){
+      manyArtist.push(array[i].name);
+    }
 }
-
+return manyArtist;
+}
+console.log('Task 7', lotsOfArt(artists));
 
 /* ***** END OF TASKS ***** */
 
