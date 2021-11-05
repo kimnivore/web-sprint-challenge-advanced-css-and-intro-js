@@ -268,11 +268,10 @@ For example, if removeArtist is invoked with the artists array and the number 0,
 
 function removeArtist(array, index){
   for(let i = 0; i < array.length; i++){
-  if(array[i] === index){
-    array.splice(index, 1);
+    array.splice(index, 1);{
+      return array.length;
+    }
 }
-}
-return array.length - 1;
 }
   console.log('Task 5', removeArtist(artists, 0));
 
